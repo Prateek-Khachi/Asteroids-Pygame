@@ -191,8 +191,8 @@ def load_sliced_sprites(w, h, filename):
     master_image = pygame.image.load(os.path.join('images', filename)).convert_alpha()
 
     master_width, master_height = master_image.get_size()
-    for i in xrange(int(master_width/w)):
-    	images.append(master_image.subsurface((i*w,0,w,h)))
+    for i in range(int(master_width/w)):
+        images.append(master_image.subsurface((i*w,0,w,h)))
     return images
         
 
